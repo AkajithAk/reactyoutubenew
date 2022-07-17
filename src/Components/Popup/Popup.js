@@ -5,20 +5,20 @@ function PopUp(){
     const handleClickOpen=()=>{
         setPop(!popup)
     }
+    const closePopup=()=>{
+        setPop(false)
+    }
     useEffect(()=>{
-        document.addEventListener('keyup', (e) => {
-            console.log(e.code,"What key pressed");
-            if (e.code === "Enter"){
-            setPop(true)
-
-            }else if (e.code === "Escape"){
+        document.addEventListener("keyup",(e)=>{
+            console.log(e.code,"key")
+            if(e.code=="Enter"){
+                setPop(true)
+            }
+            else if(e.code=="ShiftLeft"){
                 setPop(false)
             }
         })
     })
-    const closePopup=()=>{
-        setPop(false)
-    }
     return(
         <div>
             <button onClick={handleClickOpen}>Open popup</button>

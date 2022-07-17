@@ -1,0 +1,19 @@
+input{
+    height: 30px;
+    width: 25%;
+}
+
+button{
+    height: 35px;
+    width: 10%;
+    background-color: grey;
+    color: white;
+    border: none;
+}
+h1{
+    width: 40%;
+}
+.list-container{
+    border: 2px solid grey;
+    margin: 2% 30%;
+}
